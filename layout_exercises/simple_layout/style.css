@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFD1DC
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    height: 100%vh;
+  }
+  
+  .box-one {
+    background-color: plum;
+    width: 30%;
+    padding: 5px;
+  }
+  
+  .box-two {
+    background-color: #FC8EAC;
+    width: 70%;
+    padding: 5px;
+  }

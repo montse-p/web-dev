@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:bisque;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+    gap: 20px;
+}
+.element{
+    width: 18%;
+    background-color: #C4A484;
+    padding: 10px;
+    border: 1px solid brown;
+    text-align: center;
+}
+
+h2 {
+    font-size:35px;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 2;
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box-one{
+    width: 90%;
+    margin: 20px;
+    background-color: green;
+}
+
+.box-two{
+    width: 50%;
+    margin: 20px;
+    background-color: #FFDB58;
+}
+
+.box-three{
+    width: 50%;
+    margin: 20px;
+    background-color: purple;
+}
+
+.box-four{
+    width: 50%;
+    margin: 20px;
+    background-color: orangered;
+}
