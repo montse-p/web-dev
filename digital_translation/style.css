@@ -1,22 +1,154 @@
+/* maybe press to start short story??
+then text and container appear? */
+
+h1{
+    z-index: 4;
+    position: fixed;
+    top: 10px;
+    color: white;
+    /* text-shadow: 2px 0 4px #000508; */
+    /* text-shadow: 2px 2px #000000; */
+}
+
+h2{
+    z-index:5;
+    position: fixed;
+    top: 60px;
+    color: white;
+    /* text-shadow: 2px 0 4px #000508; */
+}
+
 body{
-    width: 800px;
-    margin: 100px auto;
+    /* width: 800px;
+    margin: 100px auto; */
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
     background-color: #006994;
-    color: white;
-    text-shadow: #000508; -2px 2px 8px;
-    user-select:none;
     overflow-y:scroll;
-    /* background-image: url(''); */
+    background-image: url('https://raw.githubusercontent.com/montse-p/web-dev/refs/heads/main/digital_translation/tiny_sea_bg.jpeg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px
 }
 
-container{
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+.container{
+    margin: 40px;
+    width: 700px;
+    height: 230px;
+    padding:20px 40px;
+    text-align:center;
+    border-radius: 25px;
+    z-index: 3;
+    background-color: #006994;
     overflow-y: scroll;
+    position: fixed;
+    top: 100px;
+    color: white;
+    /* make box look like it's internal-- or should i even have the shadow? */
+    /* box-shadow: 0 3px 4px 3px #000508;  */
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 100vw;
+    margin-block: .5em;
+    margin-inline: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(23, 92%, 55%);
+    border-radius: 100vw;
+}
+
+.gloria-hallelujah-regular {
+font-family: "Gloria Hallelujah", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 30px
+}
+  
+
+/* .eb-garamond-narrator {
+font-family: "EB Garamond", serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: normal;
+} */
+
+.lacquer-regular {
+font-family: "Lacquer", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 30px
+}
+
+.schoolbell-regular {
+font-family: "Schoolbell", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 30px;
+}
+
+.stick-regular {
+    font-family: "Stick", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+  }  
+
+.big-text{ 
+position: relative; 
+font-size: 70px;
+left: 10px; 
+} 
+
+.oval {
+width: 100px;
+height: 80px;
+background: #964B00;
+border-radius: 40px;
+position: relative;
+border: 5px antiquewhite solid;
+}
+
+.left-shift {
+margin-top: 50px;
+margin-left:400px;
+}
+
+  /* Hover and Item Fade:
+  https://stackoverflow.com/questions/21145621/css-transition-opacity-fade-background */
+  .hover:hover {
+    opacity: 1;
+  }
+
+  .item-fade { 
+    opacity: 0;
+    border-radius: 40px;
+    padding: 10px;
+    transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+    /* transition: opacity 2sease;
+        transition-behavior: normal;
+        transition-duration: 0s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: opacity; */
+
+ }
