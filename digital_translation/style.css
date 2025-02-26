@@ -28,14 +28,15 @@ body{
     flex-flow: column;
     background-color: #006994;
     overflow-y:scroll;
-    background-image: url('https://raw.githubusercontent.com/montse-p/web-dev/refs/heads/main/digital_translation/tiny_sea_bg.jpeg');
+    background-image: url(tiny_sea_bg.jpeg);
+    /* background-image: url("https://github.com/montse-p/web-dev/blob/f0296f5af42d4d0a23f568d926d1a01c1ef0359d/digital_translation/tiny_sea_bg.jpeg"); */
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px
+    font-size: 24px;
 }
 
 .container{
@@ -79,7 +80,7 @@ body::-webkit-scrollbar {
 font-family: "Gloria Hallelujah", serif;
 font-weight: 400;
 font-style: normal;
-font-size: 30px
+font-size: 30px;
 }
   
 
@@ -94,7 +95,7 @@ font-style: normal;
 font-family: "Lacquer", serif;
 font-weight: 400;
 font-style: normal;
-font-size: 30px
+font-size: 30px;
 }
 
 .schoolbell-regular {
