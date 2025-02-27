@@ -1,35 +1,33 @@
-/* maybe press to start short story??
-then text and container appear? */
-
 h1{
     z-index: 4;
-    position: fixed;
-    top: 10px;
-    color: white;
-    /* text-shadow: 2px 0 4px #000508; */
-    /* text-shadow: 2px 2px #000000; */
+    position: relative;
+    top: 40px;
+    color: antiquewhite;
+    text-shadow: 0 0 2px #000;
+    -moz-text-shadow: 0 0 2px #000;
+    -webkit-text-shadow: 0 0 2px #000;
+    margin: 5px;
 }
+
 
 h2{
     z-index:5;
-    position: fixed;
-    top: 60px;
-    color: white;
-    /* text-shadow: 2px 0 4px #000508; */
-}
+    position: relative;
+    color: antiquewhite;
+    text-shadow: 0 0 2px #000;
+    -moz-text-shadow: 0 0 2px #000;
+    -webkit-text-shadow: 0 0 2px #000;
+} 
 
 body{
-    /* width: 800px;
-    margin: 100px auto; */
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    background-color: #006994;
+    background-color: #113c1f;
     overflow-y:scroll;
     background-image: url(tiny_sea_bg.jpeg);
-    /* background-image: url("https://github.com/montse-p/web-dev/blob/f0296f5af42d4d0a23f568d926d1a01c1ef0359d/digital_translation/tiny_sea_bg.jpeg"); */
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     font-family: "EB Garamond", serif;
@@ -42,23 +40,17 @@ body{
 .container{
     margin: 40px;
     width: 700px;
-    height: 230px;
     padding:20px 40px;
     text-align:center;
     border-radius: 25px;
     z-index: 3;
-    background-color: #006994;
+    background: linear-gradient(#0988bb, #0d5a78, #012736);
     overflow-y: scroll;
-    position: fixed;
-    top: 100px;
-    color: white;
-    /* make box look like it's internal-- or should i even have the shadow? */
-    /* box-shadow: 0 3px 4px 3px #000508;  */
+    position: relative;
+    top: 350px;
+    color: antiquewhite;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
 
 ::-webkit-scrollbar {
     width: 1em;
@@ -69,6 +61,7 @@ body::-webkit-scrollbar {
     border-radius: 100vw;
     margin-block: .5em;
     margin-inline: 1em;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -82,14 +75,6 @@ font-weight: 400;
 font-style: normal;
 font-size: 30px;
 }
-  
-
-/* .eb-garamond-narrator {
-font-family: "EB Garamond", serif;
-font-optical-sizing: auto;
-font-weight: 600;
-font-style: normal;
-} */
 
 .lacquer-regular {
 font-family: "Lacquer", serif;
@@ -110,7 +95,7 @@ font-size: 30px;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-  }  
+}  
 
 .big-text{ 
 position: relative; 
@@ -129,7 +114,7 @@ border: 5px antiquewhite solid;
 
 .left-shift {
 margin-top: 50px;
-margin-left:400px;
+margin-left:300px;
 }
 
   /* Hover and Item Fade:
@@ -145,11 +130,21 @@ margin-left:400px;
     transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
-    /* transition: opacity 2sease;
-        transition-behavior: normal;
-        transition-duration: 0s;
-        transition-timing-function: ease;
-        transition-delay: 0s;
-        transition-property: opacity; */
-
  }
+
+img{
+    max-width: 450px;
+    position: relative;
+    z-index: 5;
+    }
+
+img[src="cup.png"] {
+    max-width: 400px;
+    margin: 10px;
+    align-items: center;
+}
+
+img[src="fence.png"] {
+    max-width: 600px;
+    z-index: 3;
+}
